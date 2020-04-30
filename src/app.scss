@@ -1,5 +1,6 @@
 @import "_common";
 
+/***************************+BARRA NAVIGAZIONE TOP **********************/
 .navbarTop {
   position: fixed;
   top: 0;
@@ -9,6 +10,7 @@
   padding: 10px 0;
   height: 54px;
   box-shadow: 0 1px 1px 1px rgba(0,0,0,0.08);
+  z-index: 999;
 
   .containerNavbar{
     display: flex;
@@ -32,11 +34,11 @@
         display: inline-block;
         vertical-align: middle;
         line-height: 35px;
-        padding: 0 10px;
+        padding: 0px 10px;
         color: $coloreTesto;
         font-weight: bold;
         font-size: 14px;
-        margin-right: 16px;
+        margin-left: 16px;
 
         i {
           vertical-align: text-top;
@@ -44,6 +46,9 @@
         button {
           @include bottoni;
         }
+      }
+      li:last-child{
+        padding: 0px 0px;
       }
     }
   }
@@ -56,6 +61,7 @@ main {
   margin-top: 120px;
 }
 
+/***************************+SEZIONE SOTTO HEADER **********************/
 .understand {
   @include container;
   @include flex;
@@ -83,7 +89,6 @@ main {
     span {
       color: $coloreTestoSecondario;
       font-size: .8125rem;
-      color: #bdb5af;
       text-align: center;
       padding: 9px 12px;
     }
@@ -109,6 +114,7 @@ main {
   }
 }
 
+/***************************+SEZIONE ROSA SOTTO HEADER **********************/
 .traditionalPeople{
   @include container;
   text-align: center;
@@ -151,7 +157,6 @@ main {
 }
 
 .teambitModern{
-
     border-top: 1px solid #bdb5af;
     @include container;
     text-align: center;
@@ -199,4 +204,239 @@ main {
       font-size: 24px;
       margin-top: 100px;
     }
+}
+
+
+/***************************+SEZIONE BIANCA **********************/
+
+.spiegazioniVarie{
+  .employeeFeedback, .reviews{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 250px;
+    color: $coloreTesto;
+    img{
+      float:left;
+      display: inline-block;
+      width: 50%;
+      max-width: 1250px;
+      height: auto;
+    }
+    .contieniTesto{
+      float:left;
+      display: inline-block;
+      width: 420px;
+      h1{
+        font-size: 26px;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 22px;
+        margin-bottom: 40px;
+        line-height: 1.5;
+      }
+      a{
+        display: block;
+        margin-bottom: 40px;
+        text-decoration: none;
+        color: $coloreLink;
+        font-size: 22px;
+      }
+      img {
+        width: 70%;
+        height: auto;
+      }
+    }
+  }
+
+  .surveys, .praise{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: $coloreTesto;
+    margin-right: 250px;
+    img{
+      display: inline-block;
+      width: 50%;
+      max-width: 1250px;
+      height: auto;
+      float: right;
+    }
+    .contieniTesto{
+      float: Right;
+      display: inline-block;
+      width: 420px;
+      margin-right: 40px;
+      h1{
+        font-size: 26px;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 20px;
+        margin-bottom: 40px;
+        line-height: 1.5;
+      }
+      a{
+        display: block;
+        margin-bottom: 40px;
+        text-decoration: none;
+        color: $coloreLink;
+        font-size: 22px;
+      }
+      img {
+        float: left;
+        width: 70%;
+        height: auto;
+      }
+    }
+  }
+}
+
+/***************************+SEZIONE ROSA CON CITAZIONE **********************/
+.seeTeambit{
+
+  @include flex;
+  color: $coloreTesto;
+  padding-top: 35px;
+  margin-bottom: 118px;
+  .contieniTesto{
+    text-align: center;
+    @include container;
+    margin-top: 50px;
+    width: 48%;
+    h1{
+      font-size: 39px;
+      line-height: 1.4;
+      font-weight: 600;
+      padding-bottom: 30px;
+    }
+    .riquadroBianco{
+      position: relative;
+      max-width: 628px;
+      margin: 35px auto;
+      padding: 20px 20px 20px 40px;
+      border: 1px solid $coloreTestoSecondario;
+      border-radius: 7px;
+      background: #fff;
+      text-align: left;
+      >img {
+        width: 37px;
+        height: 39px;
+        position: absolute;
+        top: -23px;
+        left: -1px;
+        z-index: 1;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: lighter;
+        margin: 25px 0px;
+        text-align: left;
+      }
+      .primoP {
+        margin: 0px 0;
+      }
+      .autoriCitazione{
+           img {
+          margin-right: 10px;
+          width: 38px;
+          height: auto;
+          vertical-align: bottom;
+        }
+        .autori{
+          display: inline-block;
+          p {
+            font-size: .8125rem;
+            margin: 0;
+          }
+          p:first-child {
+            color: $coloreLink;
+            font-size: .8125rem;
+            margin: 0;
+          }
+        }
+      }
+    }
+    button {
+      @include bottoni;
+      font-weight: normal;
+    }
+    span {
+      color: $coloreTestoSecondario;
+      font-size: .8125rem;
+      color: #bdb5af;
+      text-align: center;
+      padding: 9px 12px;
+    }
+    a {
+      display: block;
+      color: $coloreTesto;
+      text-decoration: none;
+      font-size: .875rem;
+      line-height: 1.5;
+      margin: 20px 0px;
+      &:hover {
+        color: #30488f;
+      }
+      i {
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+/***************************+ FOOTER **********************/
+footer {
+  padding-bottom: 120px;
+  height: 100%;
+  @include container;
+  .footerSinistra{
+    width: 33%;
+    float: left;
+    max-width: 390px;
+    img {
+      float: left;
+      height: 50px;
+      width: 50px;
+      margin-bottom: 15px;
+    }
+    p {
+      float: left;
+      font-weight: 600;
+      width: 250px;
+      margin-left: 20px;
+      a{
+        text-decoration: none;
+        color: $coloreLink;
+      }
+    }
+  }
+  .footerDestra{
+    width: 67%;
+    float: left;
+    @include flex;
+    align-items:  flex-start;
+    span {
+      display: block;
+      margin-bottom: 15px;
+      line-height: 1.2;
+      font-weight: bold;
+      color: $coloreTesto;
+    }
+    div {
+      width: 18%;
+      margin-left: 2%;
+      li {
+        display: block;
+        font-size: .875rem;
+        line-height: 2.4;
+          a{
+          text-decoration: none;
+          color: $coloreTesto;
+        }
+      }
+    }
+
+  }
 }
