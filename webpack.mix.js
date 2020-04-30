@@ -14,7 +14,6 @@ mix
   .js('src/app.js', 'dist/')
   .sass('src/app.scss', 'dist/')
   .copy('src/index.html', 'dist/')
-  .copyDirectory('src/img', 'dist/img')
   // con questo dico di non incasinarmi l'url delle immagini
   //https://laracasts.com/discuss/channels/laravel/laravel-55-webpack-css-image-urls-issue
   .options({
