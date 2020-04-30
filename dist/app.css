@@ -7,7 +7,7 @@
 }
 
 .clearfix {
-  display: block;
+  display: table;
   clear: both;
   content: "";
 }
@@ -16,6 +16,7 @@
   background-color: #FFE7D2;
 }
 
+/***************************+BARRA NAVIGAZIONE TOP **********************/
 .navbarTop {
   position: fixed;
   top: 0;
@@ -25,6 +26,7 @@
   padding: 10px 0;
   height: 54px;
   box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.08);
+  z-index: 999;
 }
 .navbarTop .containerNavbar {
   display: flex;
@@ -46,11 +48,11 @@
   display: inline-block;
   vertical-align: middle;
   line-height: 35px;
-  padding: 0 10px;
+  padding: 0px 10px;
   color: #58402C;
   font-weight: bold;
   font-size: 14px;
-  margin-right: 16px;
+  margin-left: 16px;
 }
 .navbarTop .containerNavbar ul li i {
   vertical-align: text-top;
@@ -74,11 +76,15 @@
   margin-right: 5px;
   vertical-align: text-bottom;
 }
+.navbarTop .containerNavbar ul li:last-child {
+  padding: 0px 0px;
+}
 
 main {
   margin-top: 120px;
 }
 
+/***************************+SEZIONE SOTTO HEADER **********************/
 .understand {
   max-width: 1150px;
   margin: auto;
@@ -127,7 +133,6 @@ main {
 .understand .contieniTesto span {
   color: #BDB5AF;
   font-size: 0.8125rem;
-  color: #bdb5af;
   text-align: center;
   padding: 9px 12px;
 }
@@ -150,6 +155,7 @@ main {
   height: auto;
 }
 
+/***************************+SEZIONE ROSA SOTTO HEADER **********************/
 .traditionalPeople {
   max-width: 1150px;
   margin: auto;
@@ -245,4 +251,251 @@ main {
 .teambitModern h2:last-child {
   font-size: 24px;
   margin-top: 100px;
+}
+
+/***************************+SEZIONE BIANCA **********************/
+.spiegazioniVarie .employeeFeedback, .spiegazioniVarie .reviews {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 250px;
+  color: #58402C;
+}
+.spiegazioniVarie .employeeFeedback img, .spiegazioniVarie .reviews img {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  max-width: 1250px;
+  height: auto;
+}
+.spiegazioniVarie .employeeFeedback .contieniTesto, .spiegazioniVarie .reviews .contieniTesto {
+  float: left;
+  display: inline-block;
+  width: 420px;
+}
+.spiegazioniVarie .employeeFeedback .contieniTesto h1, .spiegazioniVarie .reviews .contieniTesto h1 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.spiegazioniVarie .employeeFeedback .contieniTesto p, .spiegazioniVarie .reviews .contieniTesto p {
+  font-size: 22px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+.spiegazioniVarie .employeeFeedback .contieniTesto a, .spiegazioniVarie .reviews .contieniTesto a {
+  display: block;
+  margin-bottom: 40px;
+  text-decoration: none;
+  color: #30488F;
+  font-size: 22px;
+}
+.spiegazioniVarie .employeeFeedback .contieniTesto img, .spiegazioniVarie .reviews .contieniTesto img {
+  width: 70%;
+  height: auto;
+}
+.spiegazioniVarie .surveys, .spiegazioniVarie .praise {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: #58402C;
+  margin-right: 250px;
+}
+.spiegazioniVarie .surveys img, .spiegazioniVarie .praise img {
+  display: inline-block;
+  width: 50%;
+  max-width: 1250px;
+  height: auto;
+  float: right;
+}
+.spiegazioniVarie .surveys .contieniTesto, .spiegazioniVarie .praise .contieniTesto {
+  float: Right;
+  display: inline-block;
+  width: 420px;
+  margin-right: 40px;
+}
+.spiegazioniVarie .surveys .contieniTesto h1, .spiegazioniVarie .praise .contieniTesto h1 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.spiegazioniVarie .surveys .contieniTesto p, .spiegazioniVarie .praise .contieniTesto p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+.spiegazioniVarie .surveys .contieniTesto a, .spiegazioniVarie .praise .contieniTesto a {
+  display: block;
+  margin-bottom: 40px;
+  text-decoration: none;
+  color: #30488F;
+  font-size: 22px;
+}
+.spiegazioniVarie .surveys .contieniTesto img, .spiegazioniVarie .praise .contieniTesto img {
+  float: left;
+  width: 70%;
+  height: auto;
+}
+
+/***************************+SEZIONE ROSA CON CITAZIONE **********************/
+.seeTeambit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #58402C;
+  padding-top: 35px;
+  margin-bottom: 118px;
+}
+.seeTeambit .contieniTesto {
+  text-align: center;
+  max-width: 1150px;
+  margin: auto;
+  margin-top: 50px;
+  width: 48%;
+}
+.seeTeambit .contieniTesto h1 {
+  font-size: 39px;
+  line-height: 1.4;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.seeTeambit .contieniTesto .riquadroBianco {
+  position: relative;
+  max-width: 628px;
+  margin: 35px auto;
+  padding: 20px 20px 20px 40px;
+  border: 1px solid #BDB5AF;
+  border-radius: 7px;
+  background: #fff;
+  text-align: left;
+}
+.seeTeambit .contieniTesto .riquadroBianco > img {
+  width: 37px;
+  height: 39px;
+  position: absolute;
+  top: -23px;
+  left: -1px;
+  z-index: 1;
+}
+.seeTeambit .contieniTesto .riquadroBianco p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: lighter;
+  margin: 25px 0px;
+  text-align: left;
+}
+.seeTeambit .contieniTesto .riquadroBianco .primoP {
+  margin: 0px 0;
+}
+.seeTeambit .contieniTesto .riquadroBianco .autoriCitazione img {
+  margin-right: 10px;
+  width: 38px;
+  height: auto;
+  vertical-align: bottom;
+}
+.seeTeambit .contieniTesto .riquadroBianco .autoriCitazione .autori {
+  display: inline-block;
+}
+.seeTeambit .contieniTesto .riquadroBianco .autoriCitazione .autori p {
+  font-size: 0.8125rem;
+  margin: 0;
+}
+.seeTeambit .contieniTesto .riquadroBianco .autoriCitazione .autori p:first-child {
+  color: #30488F;
+  font-size: 0.8125rem;
+  margin: 0;
+}
+.seeTeambit .contieniTesto button {
+  padding: 0px 11px;
+  height: 35px;
+  line-height: 35px;
+  background: #30488f;
+  border: 1px solid #30488f;
+  border-radius: 7px;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  font-weight: normal;
+}
+.seeTeambit .contieniTesto button img {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  vertical-align: text-bottom;
+}
+.seeTeambit .contieniTesto span {
+  color: #BDB5AF;
+  font-size: 0.8125rem;
+  color: #bdb5af;
+  text-align: center;
+  padding: 9px 12px;
+}
+.seeTeambit .contieniTesto a {
+  display: block;
+  color: #58402C;
+  text-decoration: none;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 20px 0px;
+}
+.seeTeambit .contieniTesto a:hover {
+  color: #30488f;
+}
+.seeTeambit .contieniTesto a i {
+  vertical-align: middle;
+}
+
+/***************************+ FOOTER **********************/
+footer {
+  padding-bottom: 120px;
+  height: 100%;
+  max-width: 1150px;
+  margin: auto;
+}
+footer .footerSinistra {
+  width: 33%;
+  float: left;
+  max-width: 390px;
+}
+footer .footerSinistra img {
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 15px;
+}
+footer .footerSinistra p {
+  float: left;
+  font-weight: 600;
+  width: 250px;
+  margin-left: 20px;
+}
+footer .footerSinistra p a {
+  text-decoration: none;
+  color: #30488F;
+}
+footer .footerDestra {
+  width: 67%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+}
+footer .footerDestra span {
+  display: block;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #58402C;
+}
+footer .footerDestra div {
+  width: 18%;
+  margin-left: 2%;
+}
+footer .footerDestra div li {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 2.4;
+}
+footer .footerDestra div li a {
+  text-decoration: none;
+  color: #58402C;
 }
